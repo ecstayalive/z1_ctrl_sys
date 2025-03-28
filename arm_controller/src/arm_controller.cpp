@@ -357,7 +357,7 @@ bool ArmController::planServer(arm_controller_srvs::Plan::Request& req,
           (ee_pose_goal_ - prev_ee_pose_goal_).block<3, 1>(0, 3).norm() /
           average_move_speed_ / control_period_);
       plan_max_tick_ = std::max(10uL, plan_max_tick_);
-      lazyPlan();
+      lazyPlan(start_joint_pose, arm_joint_goal_, plan_max_tick_);
       setArmControlFsm(ArmControlFsm::PlanMove);
       res.call_success = true;
     }
