@@ -1,0 +1,4 @@
+[submodule "arm_controller/thirdparty/z1_sdk"]
+	path = arm_controller/thirdparty/z1_sdk
+	url = https://github.com/unitreerobotics/z1_sdk
+	branch = master
