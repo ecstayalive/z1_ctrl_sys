@@ -1,0 +1,9 @@
+# goal
+geometry_msgs/PoseStamped target_pose
+---
+# result
+bool execute_success
+---
+# feedback
+float32 percent
+sensor_msgs/JointState joint_states
